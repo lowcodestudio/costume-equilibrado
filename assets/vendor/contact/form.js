@@ -24,6 +24,7 @@ const handleSubmit = (event) => {
     })
       .then(() => {
         document.querySelector('.loading').classList.remove('d-block');
+        document.getElementById('sendFormBtn').remove()
         document.querySelector('.sent-message').classList.add('d-block');
       })
       .catch((error) => {
